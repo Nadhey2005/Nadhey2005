@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+   content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible"
+   content="IE=edge">
+    <title>SITE DE VENTE</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">-->
+ </head>
+ 
+  <body id="body">
+
+    <header class="header">
+      <div class="logo">STRONIC</div>
+      <div class="menu" onclick="opencloseMenu()">
+        <div class="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+    
+    
+    <div class="avant-post" id="avntPost">
+      <span class="name-Site">
+        <span>S</span>
+        <span>T</span>
+        <span>R</span>
+        <span>O</span>
+        <span>N</span>
+        <span>I</span>
+        <span>C</span>
+      </span>
+
+      <span class="ms">
+        <p>Bienvenue sur<br>STRONIC</p>
+        <button onclick="openSite()">Ouvrir STRONIC</button>
+      </span>
+      
+      <span class="imgDesing">
+        <span><img src="/Images/Montre.png"></span>
+        <span><img src="/Images/Montre.png"></span>
+      </span>
+    </div>
+      
+      
+      
+    <div class="containerResearch-product">
+       
+      <div class="input-container">
+        <input type="text" id="search-input" placeholder="Rechercher: Tennis, Sac à main, etc...">
+        <p id="error-message"></p>
+      </div>
+      <!--PRODUITS RECHERCHÉS-->
+      <div class="titre-classResearch">
+        <p>👇Produits recherchés...👇</p>
+      </div>
+      <div class="productSearch">
+        <!--Catégorie autres-->
+        <div class="product-card" data-name="Apple watch">
+            <span class="category">Autre</span>
+            <div class="-img">
+              <img src="https://i.pinimg.com/736x/b0/34/81/b034811f0d60aa22eb0cecd8f1d5101d.jpg" alt="STRONIC.site/prodcuct" width="100" height="100">
+            </div>
+            <h2>Apple watch</h2>
+            <div class="price"><p>9 500 G.</p></div>
+            <div class="buttons">
+                <button class="add-to-cart">+ en panier</button>
+                <button class="buy-now">Prend ça!</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-name="Képi">
+            <span class="category">Autre</span>
+            <div class="-img">
+              <img src="https://i.pinimg.com/736x/b0/34/81/b034811f0d60aa22eb0cecd8f1d5101d.jpg" alt="STRONIC.site/prodcuct" width="100" height="100">
+            </div>
+            <h2>Képi</h2>
+            <div class="price"><p>9 000 G.</p></div>
+            <div class="buttons">
+                <button class="add-to-cart">+ en panier</button>
+                <button class="buy-now">Prend ça!</button>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="product-card" data-name="Tennis Nike">
+            <span class="category">Autre</span>
+            <div class="-img">
+              <img src="https://i.pinimg.com/736x/b0/34/81/b034811f0d60aa22eb0cecd8f1d5101d.jpg" alt="STRONIC.site/prodcuct" width="100" height="100">
+            </div>
+            <h2>Tennis Nike</h2>
+            <div class="price"><p>9 500 G.</p></div>
+            <div class="buttons">
+                <button class="add-to-cart">+ en panier</button>
+                <button class="buy-now">Prend ça!</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-name="Chemise">
+            <span class="category">Autre</span>
+            <div class="-img">
+              <img src="https://i.pinimg.com/736x/b0/34/81/b034811f0d60aa22eb0cecd8f1d5101d.jpg" alt="STRONIC.site/prodcuct" width="100" height="100">
+            </div>
+            <h2>Chemise</h2>
+            <div class="price"><p>9 000 G.</p></div>
+            <div class="buttons">
+                <button class="add-to-cart">+ en panier</button>
+                <button class="buy-now">Prend ça!</button>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+      
+      </div>
+      <!-- Message si aucun produit trouvé -->
+      <div id="no-results">
+        <p class="no-results">Le produit n'existe pas.<br>Appuyez sur le bouton ci-dessous pour voir toutes les articles disponibles...</p>
+        <div class="alert-Btn">
+          <a href="#product-dispo">Voir toutes les articles disponibles dans<br><u>Accessoires & Technologies</u></a>
+        </div>
+      </div>
+    
+    </div>
+    
+    
+    
+    <span id="product-dispo">
+    <!--ACCESSOIRES-->
+    <div class="titre-class">
+      <p id="access">Accessoires</p>
+    </div>
+
+    <div class="containerProduct-access">
+      <!--Catégorie accessoires-->
+        <div class="productCard-access">
+          <span class="category">Maillot</span>
+          <div class="-imgAccess">
+            <img src="https://i.pinimg.com/736x/b0/34/81/b034811f0d60aa22eb0cecd8f1d5101d.jpg" alt="STRONIC.site" width="100" height="100">
+          </div>
+          <div class="infoProduct-access">
+            <h2>Apple watch</h2>
+            <div class="price"><p>9 500 G.</p></div>
+            <div class="buttons">
+              <button class="add-to-cart">Voir plus...</button>
+              <button class="buy-now">Prend ça!</button>
+            </div>
+          </div>
+      </div>
+      
+      
+      <div class="productCard-access">
+          <span class="category">T-shirt</span>
+          <div class="-imgAccess">
+            <img src="https://i.pinimg.com/736x/b0/34/81/b034811f0d60aa22eb0cecd8f1d5101d.jpg" alt="STRONIC.site" width="100" height="100">
+          </div>
+          <div class="infoProduct-access">
+            <h2>Apple watch</h2>
+            <div class="price"><p>9 500 G.</p></div>
+            <div class="buttons">
+              <button class="add-to-cart">Voir plus...</button>
+              <button class="buy-now">Prend ça!</button>
+            </div>
+          </div>
+      </div>
+      
+      
+      <div class="productCard-access">
+          <span class="category">Bonnet</span>
+          <div class="-imgAccess">
+            <img src="https://i.pinimg.com/736x/b0/34/81/b034811f0d60aa22eb0cecd8f1d5101d.jpg" alt="STRONIC.site" width="100" height="100">
+          </div>
+          <div class="infoProduct-access">
+            <h2>Apple watch</h2>
+            <div class="price"><p>9 500 G.</p></div>
+            <div class="buttons">
+              <button class="add-to-cart">Voir plus...</button>
+              <button class="buy-now">Prend ça!</button>
+            </div>
+          </div>
+      </div>
+      
+      
+      <div class="productCard-access">
+          <span class="category">Écouteur</span>
+          <div class="-imgAccess">
+            <img src="https://i.pinimg.com/736x/b0/34/81/b034811f0d60aa22eb0cecd8f1d5101d.jpg" alt="STRONIC.site" width="100" height="100">
+          </div>
+          <div class="infoProduct-access">
+            <h2>Apple watch</h2>
+            <div class="price"><p>9 500 G.</p></div>
+            <div class="buttons">
+              <button class="add-to-cart">Voir plus...</button>
+              <button class="buy-now">Prend ça!</button>
+            </div>
+          </div>
+      </div>
+      
+        
+    </div>
+    
+    
+    
+    <!--TECHNOLOGIE-->
+    <div class="titre-class">
+      <p id="tech">Technologies</p>
+    </div>
+
+    <div class="containerProduct-access">
+      <!--Catégorie accessoires-->
+        <div class="productCard-access">
+          <span class="category">Maillot</span>
+          <div class="-imgAccess">
+            <img src="https://i.pinimg.com/736x/b0/34/81/b034811f0d60aa22eb0cecd8f1d5101d.jpg" alt="STRONIC.site" width="100" height="100">
+          </div>
+          <div class="infoProduct-access">
+            <h2>Apple watch</h2>
+            <div class="price"><p>9 500 G.</p></div>
+            <div class="buttons">
+              <button class="add-to-cart">Voir plus...</button>
+              <button class="buy-now">Prend ça!</button>
+            </div>
+          </div>
+      </div>
+      
+      
+      <div class="productCard-access">
+          <span class="category">T-shirt</span>
+          <div class="-imgAccess">
+            <img src="https://i.pinimg.com/736x/b0/34/81/b034811f0d60aa22eb0cecd8f1d5101d.jpg" alt="STRONIC.site" width="100" height="100">
+          </div>
+          <div class="infoProduct-access">
+            <h2>Apple watch</h2>
+            <div class="price"><p>9 500 G.</p></div>
+            <div class="buttons">
+              <button class="add-to-cart">Voir plus...</button>
+              <button class="buy-now">Prend ça!</button>
+            </div>
+          </div>
+      </div>
+      
+      
+      <div class="productCard-access">
+          <span class="category">Bonnet</span>
+          <div class="-imgAccess">
+            <img src="https://i.pinimg.com/736x/b0/34/81/b034811f0d60aa22eb0cecd8f1d5101d.jpg" alt="STRONIC.site" width="100" height="100">
+          </div>
+          <div class="infoProduct-access">
+            <h2>Apple watch</h2>
+            <div class="price"><p>9 500 G.</p></div>
+            <div class="buttons">
+              <button class="add-to-cart">Voir plus...</button>
+              <button class="buy-now">Prend ça!</button>
+            </div>
+          </div>
+      </div>
+      
+      
+      <div class="productCard-access">
+          <span class="category">Écouteur</span>
+          <div class="-imgAccess">
+            <img src="https://i.pinimg.com/736x/b0/34/81/b034811f0d60aa22eb0cecd8f1d5101d.jpg" alt="STRONIC.site" width="100" height="100">
+          </div>
+          <div class="infoProduct-access">
+            <h2>Apple watch</h2>
+            <div class="price"><p>9 500 G.</p></div>
+            <div class="buttons">
+              <button class="add-to-cart">Voir plus...</button>
+              <button class="buy-now">Prend ça!</button>
+            </div>
+          </div>
+      </div>
+      
+        
+    </div>
+    </span>
+    
+    
+    
+    
+    
+
+    <!--Pages_Des_Paramètres-->
+    <div class="bg-return" onclick="closeWenu()"></div>
+    
+    <div class="container-page-menu">
+      
+      <div class="menu-item">
+        <h5>------‐-- Menu ------‐--</h5>
+        <a href="#home"><ion-icon name="home">|</ion-icon>Accueil</a>
+        <!--=======-->
+        <p onclick="toggleContact()"><ion-icon name="call">|</ion-icon>Contact</p>
+        <div class="menu-contact" id="dropdownMenu">
+          <p>+509 4194-3476</p>
+          <p>+509 3554-0470</p>
+          <p>+509 4194-3476</p>
+          <p>+509 3554-0470</p>
+          <p>+509 4194-3476</p>
+          <p>+509 3554-0470</p>
+        </div>
+        <!--=======-->
+        <a href="#info"><ion-icon name="book">|</ion-icon>Infos</a>
+      </div>
+      
+      <div class="categories-in-menu">
+        <h5>------‐-- Catégories ------‐--</h5>
+        <li>
+          <a href="#tech">Technologies</a>
+          <a href="#access">Accessoires</a>
+          <a href="#other">Autres</a>
+        </li>
+      </div>
+      
+      <div class="categories-in-menu">
+        <h5>------‐-- STRONIC ------‐--</h5>
+        <span>
+          <button onclick="closeStronic()"><ion-icon name="pen"></ion-icon>Fermer STRONIC</button>
+        </span>
+      </div>
+      
+    </div>
+
+
+
+
+
+
+    <footer id="info">
+      <h2>Bienvenue sur STRONIC – Votre Boutique de Confiance...</h2>
+      <p>Chez <b>STRONIC</b>, nous mettons un point d'honneur à offrir une expérience d'achat en ligne sécurisée, rapide et agréable. Notre priorité est votre satisfaction, et c'est pourquoi nous nous engageons à vous proposer des produits de qualité, un service client réactif et des transactions 100% sécurisées.</p>
+      <br>
+      <br>
+      <h2>Pourquoi faire confiance à STRONIC ?</h2>
+      <p><strong>● Produits sélectionnés avec soin :</strong> Nous choisissons nos articles en fonction de leur qualité et de leur fiabilité.<br><br>
+      <strong>● Paiement sécurisé :</strong> Vos transactions sont protégées grâce aux dernières technologies de cryptage.<br><br>
+      <strong>● Service client dédié :</strong> Une question ? Une assistance ? Notre équipe est à votre écoute pour vous aider rapidement.<br><br>
+      <strong>● Livraison rapide et suivie :</strong> Nous nous assurons que votre commande arrive chez vous dans les meilleurs délais.<br><br>
+      <strong>● Garantie satisfaction :</strong> Si vous n'êtes pas satisfait, nous vous accompagnons pour un retour ou un échange en toute simplicité.</p>
+      <br>
+      <br>
+      <p>Achetez en toute confiance avec STRONIC! Rejoignez dès maintenant notre communauté de clients satisfaits et vivez une expérience d'achat unique avec STRONIC !</p>
+      
+      <div class="access-contact">
+        <button>Instagram</button>
+        <button>WhatsApp</button>
+        <button>Tiktok</button><br>
+        <button>Facebook</button>
+        <button>X</button>
+        <button>Telegram</button>
+      </div>
+      
+      <div class="adresse">
+        <img src="/Images/img-adr_Haïti.jpg" alt="Local" width="50" height="25">
+        <p>Port-au-Prince, Haïti</p>
+      </div>
+      
+      <h5>&copy;Stronic.site 2025 - Tous droits réservés</h5>
+    </footer>
+    
+    
+    
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
